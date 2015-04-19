@@ -54,7 +54,7 @@ $update_channel='beta'
 #$share_home=false
 
 # Customize VMs
-$vm_gui = true
+$vm_gui = false
 $vm_memory = 512
 $vm_cpus = 1
 
