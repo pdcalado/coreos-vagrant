@@ -1,0 +1,5 @@
+Get yaml validator and run it on cloud-init (user-data in the coreos-vagrant folder)
+
+vboxnetadp and vboxnetflt modules must be running
+
+any issues with rpc, restart rpcbind service
