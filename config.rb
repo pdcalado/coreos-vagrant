@@ -63,7 +63,8 @@ $vm_cpus = 1
 # $shared_folders = {'/path/on/host' => '/path/on/guest', '/home/foo/app' => '/app'}
 # or, to map host folders to guest folders of the same name,
 # $shared_folders = Hash[*['/home/foo/app1', '/home/foo/app2'].map{|d| [d, d]}.flatten]
-$shared_folders = {'/home/calado/coreos/coreos-vagrant/share' => '/home/core/share'}
+$shared_folders = {'/home/calado/coreos/vagrant/docker' => '/home/core/docker',
+                   '/home/calado/go/src' => '/home/core/go/src' }
 
 # Enable port forwarding from guest(s) to host machine, syntax is: { 80 => 8080 }, auto correction is enabled by default.
-#$forwarded_ports = {}
+$forwarded_ports = { 4001 => 4001 }
